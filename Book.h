@@ -28,7 +28,6 @@ public:
         ++totalBooks;
     }
 
-    // Rule of 5
     ~Book() { --totalBooks; }
     
     Book(const Book& other) 
@@ -70,14 +69,12 @@ public:
         return *this;
     }
 
-    // Getters
     const std::string& getTitle() const { return title; }
     const Author& getAuthor() const { return author; }
     int getYear() const { return year; }
     double getPrice() const { return price; }
     const std::string& getISBN() const { return isbn; }
 
-    // Setters with validation
     void setTitle(const std::string& t) { title = t; }
     void setAuthor(const Author& a) { author = a; }
     
@@ -108,5 +105,4 @@ public:
     static int getTotalBooks() { return totalBooks; }
 };
 
-// Initialize static member
 inline int Book::totalBooks = 0;
