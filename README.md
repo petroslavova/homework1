@@ -32,15 +32,6 @@ homework1/
 
 ## Компилация и изпълнение
 
-### Вариант 1: Използване на скрипт (Linux/macOS)
-Отворете терминал в директорията `library-system/` и изпълнете:
-
-```bash
-chmod +x compile.sh
-./compile.sh
-```
-
-### Вариант 2: Директна компилация
 ```bash
 g++ -std=gnu++17 -Wall -Wextra -pedantic -O2 -o library main.cpp
 ```
@@ -50,13 +41,6 @@ g++ -std=gnu++17 -Wall -Wextra -pedantic -O2 -o library main.cpp
 ```bash
 ./library
 ```
-
-### За Windows с MinGW
-```cmd
-g++ -std=gnu++17 -Wall -Wextra -O2 -o library.exe main.cpp
-library.exe
-```
-
 ---
 
 ## Примерен изход
