@@ -32,6 +32,8 @@ homework1/
 
 ## Компилация и изпълнение
 
+Отворете терминал в директорията homework1/ и изпълнете:
+
 ```bash
 g++ -std=gnu++17 -Wall -Wextra -pedantic -O2 -o library main.cpp
 ```
